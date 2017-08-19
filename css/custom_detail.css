@@ -1,0 +1,9 @@
+.cus_navbar
+{
+	font-family:"微软雅黑","华文细黑",Arial, Helvetica, sans-serif;
+}
+
+.cus_navbar:hover
+{
+	font-weight:bold;
+}
