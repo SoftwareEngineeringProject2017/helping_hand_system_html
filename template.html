@@ -23,7 +23,7 @@
     <body>
         <!--泛用导航栏-->
         <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid"> 
+            <div class="container-fluid "> 
                 <div class="navbar-header">
                     <a class="navbar-brand active" href="#"><p class="main_logo">校园互助系统</p></a>
                 </div>
@@ -31,15 +31,15 @@
                     <!-- 以下内容向左对齐 -->
                     <ul class="nav navbar-nav navbar-left">
                         <!--快速搜索-->
-                        <form class="navbar-form navbar-left" action="#" method="POST" role="search">
-                            <div class="form-group">
+                        <form class="navbar-form navbar-left collapse navbar-collapse" action="#" method="POST" role="search">
+                            <div class="form-group ">
                               <input type="text" name="search_key" class="form-control" placeholder="用户,任务关键词...">
                             </div>
                             <button type="submit" class="btn btn-default">给我搜!</button>
                         </form>
                     </ul>
                     <!-- 以下内容向右对齐 TODO:确认公用项-->
-                    <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-usd"></span>接受的任务</a></li>
                         <!-- TODO:判断 - if 登录状态 -->
                         <!-- <li><p class="navbar-text">欢迎您，<strong>用户名<strong></p></li> -- > 
