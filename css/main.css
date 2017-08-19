@@ -1,0 +1,9 @@
+.main_logo
+{
+	color:#006600;
+}
+.main_logo:hover
+{
+	color:#003300;
+	text-shadow:1px 1px 1px #006600
+}
