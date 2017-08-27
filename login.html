@@ -65,21 +65,50 @@
   </nav>
 </header>
 <!-- 正文内容 -->
-<div class="navbar_blocker"></div>
-<div class="container-fluid">
-<!-- 真正的内容 -->
-	<div class="row">
-		<div class="col-lg-2 col-md-1">
+<div class="row splash-block" style="background: url(images/background/login.jpg) fixed;">
+		<div class="centered">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="panel panel-default">   	
+                    <div class="panel-body">
+            		<h3 class="text-center">用户登录</h3>
+            		<br>
+            		<form id="login_form" class="form-horizontal" role="form" action="CtrlServlet?action=log_in" method="Post">
+                            <div class="alert alert-danger">
+   	 			<a href="#" class="close" data-dismiss="alert">&times;</a><strong>错误！</strong>您的用户名不能为空！
+                            </div>
+                            <div class="alert alert-warning">
+   	 			<a href="#" class="close" data-dismiss="alert"> &times;</a><strong>警告！</strong>您的密码不能为空！
+                            </div>
+                            <div class="alert alert-warning">
+   	 			<a href="#" class="close" data-dismiss="alert"> &times;</a><strong>警告！</strong>您的用户名有误！
+                            </div>
+                            <div class="alert alert-warning">
+   	 			<a href="#" class="close" data-dismiss="alert"> &times;</a><strong>警告！</strong>您的密码有误！
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="form-control" class="col-sm-3 control-label">用户名</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="form-control" name="login_username">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="login_password" class="col-sm-3 control-label">密码</label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control" name="login_password">
+                                </div>
+                            </div>
+                            <br>
+                                <center><button class="btn btn-primary" id="submit_data" style="width:20%" type="submit">提交</button></center>
+                           </form>      
+                    </div>
 		</div>
-		<div class="col-lg-8 col-md-10 col-sm-12">
-			<div class="row">
-			</div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
 		</div>
-		<div class="col-lg-2">
-		</div>
-	</div>
-</div>
-
 </body>
 
 <!--Scripts--> 
@@ -88,11 +117,4 @@
 <script src="scripts/jquery.smooth-scroll.min.js"></script> 
 <script src="scripts/mixitup/jquery.mixitup.min.js"></script> 
 <script src="scripts/theme.js"></script> 
-<script>
-		$('.nav-tabs a').click(function (e) {
-			e.preventDefault();
-			$(this).tab('show');
-		})
-	</script>
-	
 </body>

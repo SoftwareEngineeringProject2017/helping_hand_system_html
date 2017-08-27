@@ -65,6 +65,7 @@
   </nav>
 </header>
 <!-- 正文内容 -->
+<!-- 导航栏预留位置 -->
 <div class="navbar_blocker"></div>
 <div class="container-fluid">
 <!-- 真正的内容 -->
@@ -72,13 +73,38 @@
 		<div class="col-lg-2 col-md-1">
 		</div>
 		<div class="col-lg-8 col-md-10 col-sm-12">
-			<div class="row">
+			<div class="row newtask">
+				<div class="row newtask_block">
+					<h1 class="">新建任务</h1>
+				</div>
+				<div class="row newtask_block">
+					<form class="form-horizontal" role="form" method="POST">
+					<div class="form-group">
+						<label for="task_name" class="col-sm-2 control-label">任务名称</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="task_name" placeholder="输入任务名称，支持中英文">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="task_detail" class="col-sm-2 control-label">任务细节(可选)</label>
+						<div class="col-sm-10">
+							<textarea class="form-control" rows="3" id="task_detail"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-default">创建</button>
+						</div>
+					</div>
+					</form>
+				</div>
 			</div>
 		</div>
-		<div class="col-lg-2">
+		<div class="col-lg-2 col-md-1">
 		</div>
 	</div>
 </div>
+
 
 </body>
 

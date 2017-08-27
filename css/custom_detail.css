@@ -1,0 +1,58 @@
+﻿/*导航栏相关*/
+/*Support for 360browser*/
+.cus_navbar
+{
+	font-family:"微软雅黑","华文细黑",Arial, Helvetica, sans-serif;
+}
+
+.cus_navbar:hover
+{
+	font-weight:bold;
+}
+
+.navbar_blocker
+{
+	margin-top:65px;
+}
+
+/*任务列表*/
+.newtask
+{
+	margin:2px 2px 2px 2px;
+	padding:12px 12px;
+	background:url(../images/background/new_tasks.jpg)  no-repeat;
+	box-shadow: 0 0 70px 100px rgb(237, 237, 240) inset;
+	background-color:rgb(237,237,240);
+	opacity:0.8;
+	border-radius:3px;
+}
+/*每一行的元素定义*/
+.newtask_block
+{
+	margin:10px 4px;
+	padding:5px 10px;
+	background:rgba(0,0,255,0.1);
+	border-radius: 3px;
+}
+
+/*索引栏，比如帮助左侧的索引*/
+.index_navbar
+{
+	padding:8px 15px;
+	border-radius:3px;
+	background-color:rgba(0,0,255,0.05);
+}
+.index_navbar:hover
+{
+	background-color:rgba(0,0,255,0.1);
+}
+li.index_navbar
+{
+	color:rgba(0,0,0,0.1)
+}
+
+
+.help_content
+{
+	background:url(../images/background/help_content.jpg) fixed no-repeat;
+}
