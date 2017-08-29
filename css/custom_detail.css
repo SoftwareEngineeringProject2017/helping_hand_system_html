@@ -20,10 +20,9 @@
 {
 	margin:2px 2px 2px 2px;
 	padding:12px 12px;
-	background:url(../images/background/new_tasks.jpg)  no-repeat;
+	background:url(../images/background/new_tasks_fix.png)  no-repeat;
 	box-shadow: 0 0 70px 100px rgb(237, 237, 240) inset;
 	background-color:rgb(237,237,240);
-	opacity:0.8;
 	border-radius:3px;
 }
 /*每一行的元素定义*/
@@ -31,7 +30,7 @@
 {
 	margin:10px 4px;
 	padding:5px 10px;
-	background:rgba(0,0,255,0.1);
+	background:rgba(0,0,255,0.15);
 	border-radius: 3px;
 }
 
