@@ -66,7 +66,6 @@
 /*任务大厅的单个任务*/
 .task_block
 {
-	color(0,0,0);
 	margin:5px 2px;
 	padding:5px 5px;
 }
@@ -75,6 +74,16 @@
 {
 	border:1px dotted rgb(213,186,0);
 	color:rgb(213,186,0);
+}
+
+.task_block.accept
+{
+	background-color:rgba(0,128,0,0.05);
+}
+
+.task_block.finished
+{
+	background-color:rgba(255,255,255,0.05);
 }
 
 
@@ -86,16 +95,24 @@
 	border-radius:3px;
 	background-color:rgba(0,0,255,0.05);
 }
+.index_navbar
+{
+	color:rgb(0,0,0);
+}
 .index_navbar:hover
 {
 	background-color:rgba(0,0,255,0.1);
 }
-li.index_navbar
+/*边栏中活跃的当前内容*/
+.active_slideritem
 {
-	color:rgba(0,0,0,0.1)
+	font-weight:bold;
+	color:rgb(0,0,0);
 }
-
-
+.active_slideritem:hover
+{
+	background-color:inherit;
+}
 .help_content
 {
 	background:url(../images/background/help_content.jpg) fixed no-repeat;
