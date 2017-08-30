@@ -79,12 +79,20 @@
 				<h2>任务一览</h2>
 			</div>
 			<div class="row newtask_block">
-				<div class="row"><p>筛选设置：</p></div>
-				<div class="row">
-				<form class="form-inline">
-					
-				</form>
-				</div class>
+				<div class="row" style="padding:inherit;"><p>筛选设置：</p></div>
+				<div class="row" style="padding:inherit;">
+					<form class="form-inline">
+						<div class="form-group">
+							<label for="title">任务名称</label>
+							<input type="text" class="form-control" id="exampleInputName2" placeholder="支持模糊搜索">
+						</div>
+						<div class="form-group">
+							<label for="ifVIP">VIP任务</label>
+							<input type="checkbox" class="form-control" id="ifVIP">
+						</div>
+						<button type="submit" class="btn btn-default">给我搜</button>
+					</form>
+				</div>
 			</div>
 			<div class="row newtask_block">
 				<div class="collapse hidden-xs col-sm-1">
@@ -95,6 +103,34 @@
 				</div>
 				<div class="col-xs-2">
 					<p><center>可接受人数</center></p>
+				</div>
+				<div class="col-xs-5 col-sm-2">
+					<p><center>操作</center></p>
+				</div>
+			</div>
+			<div class="row newtask_block accept">
+				<div class="collapse hidden-xs col-sm-1">
+					<p><center>1</center></p>
+				</div>
+				<div class="col-xs-5 col-sm-7">
+					<p><center>示例任务1</center></p>
+				</div>
+				<div class="col-xs-2">
+					<p><center>10</center></p>
+				</div>
+				<div class="col-xs-5 col-sm-2">
+					<p><center>操作</center></p>
+				</div>
+			</div>
+			<div class="row newtask_block finished">
+				<div class="collapse hidden-xs col-sm-1">
+					<p><center>2</center></p>
+				</div>
+				<div class="col-xs-5 col-sm-7">
+					<p><center>示例任务2</center></p>
+				</div>
+				<div class="col-xs-2">
+					<p><center>10</center></p>
 				</div>
 				<div class="col-xs-5 col-sm-2">
 					<p><center>操作</center></p>
