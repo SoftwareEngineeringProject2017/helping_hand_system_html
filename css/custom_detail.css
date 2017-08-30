@@ -83,7 +83,12 @@
 
 .task_block.finished
 {
-	background-color:rgba(255,255,255,0.05);
+	background-color:rgba(0,0,0,0.05);
+}
+
+.task_block.doing
+{
+	background-color:rgba(255,204,0,0.05);
 }
 
 
