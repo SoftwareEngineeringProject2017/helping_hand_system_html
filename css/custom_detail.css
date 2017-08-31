@@ -126,11 +126,25 @@
 /*详细任务背景*/
 .taskinformation
 {
-	margin:2px 2px 2px 2px;
+	margin:10px 2px;
 	padding:12px 12px;
-	box-shadow: 0 0 70px 100px rgb(237, 237, 240) inset;
 	background-color:rgb(237,237,240);
 	border-radius:3px;
+}
+
+.taskacceptinformation
+{
+	margin:10px 2px;
+	padding:12px 12px;
+	background-color:rgb(220,216,213);
+	border-radius:3px;
+}
+
+.taskacceptinformation.VIP
+{
+	border:1px dotted rgb(213,186,0);
+	background-color:rgba(213,186,0,0.05);
+	color:rgb(213,186,0);
 }
 
 /*每一行的元素定义*/
