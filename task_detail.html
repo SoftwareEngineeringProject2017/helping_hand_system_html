@@ -70,10 +70,15 @@
 	<div class="row">
 		<div class="col-lg-2 col-md-1">
 		</div>
-		<div class="col-lg-8 col-md-10 col-sm-12">
+		<div class="col-lg-8 col-md-10 col-sm-12 taskinf_detail">
 			<!--任务信息栏-->
 			<form class="form-horizontal" role="form" method="POST" action="#">
 			<div class="row taskinformation">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3>任务概览</h3>
+					</div>
+				</div>
 				<div class="row">
 					<!--非编辑模式时，将同div下注释内容与未注释内容反转-->
 					<!--<div class="col-lg-1 col-sm-2 col-xs-12"><p>标题</p></div>
@@ -82,19 +87,19 @@
 					<div class="col-lg-2 col-sm-4 col-xs-8"><p>测试用户</p></div>
 					<div class="col-lg-2 col-sm-2 col-xs-4"><p>发布日期</p></div>
 					<div class="col-lg-2 col-sm-4 col-xs-8"><p>1999-01-01</p></div>>-->
-					<div class="form-group" style="margin:0px 0px;">
+					<div class="form-group" style="margin:5px 0px;">
 						<label for="edited_tasktitle" class="col-sm-2 col-xs-4"><p>标题</p></label>
 						<div class="col-sm-10 col-xs-8">
 							<input type="text" class="form-control" id="edited_tasktitle" placeholder="value=存好的任务" value="示例任务标题">
 						</div>
 					</div>
-					<div class="form-group" style="margin:0px 0px;">
+					<div class="form-group" style="margin:5px 0px;">
 						<label for="edited_publisher" class="col-sm-2 col-xs-4"><p>发布者</p></label>
 						<div class="col-sm-10 col-xs-8">
 							<input type="text" class="form-control" id="edited_publisher" placeholder="value=存好的发布者">
 						</div>
 					</div>
-					<div class="form-group" style="margin:0px 0px;">
+					<div class="form-group" style="margin:5px 0px;">
 						<label for="edited_data" class="col-sm-2 col-xs-4"><p>发布日期</p></label>
 						<div class="col-sm-10 col-xs-8">
 							<input type="datetime" class="form-control" id="edited_data" placeholder="value=存好的发布日期">
@@ -120,31 +125,48 @@
 						<textarea class="form-control" rows="3" id="edited_taskdetail" placeholder="在这里输入详细描述">示例任务详情<br>示例任务详情第二行</textarea>
 					</div>
 				</div>
+				<div class="row">
+					<div class="form-group" style="margin:5px 0px;">
+						<div class="col-xs-3">
+						</div>
+						<div class="col-xs-3">
+							<center><button type="submit" class="btn btn-success">确认修改</button></center>
+						</div>
+						<div class="col-xs-3">
+							<center><button type="reset" class="btn btn-warning">重置</button></center>
+						</div>
+					</div>
+				</div>
 			</div>
 			</form>
 			<!--接受任务栏-->
 			<form class="form-horizontal" role="form" method="POST" action="#">
 			<div class="row taskacceptinformation">
-				<div class="row-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3>接受者概览</h3>
+					</div>
+				</div>
+				<div class="row">
 					<!--非编辑模式时，将同div下注释内容与未注释内容反转-->
 					<!--<div class="col-md-2 col-sm-3 col-xs-12"><p>接受标题</p></div>
 					<div class="col-md-6 col-sm-9 col-xs-12"><p>示例标题</p></div>
 					<div class="col-md-2 col-sm-3 col-xs-6"><p>接受者</p></div>
 					<div class="col-md-2 col-sm-9 col-xs-6"><p>示例接受者</p></div>-->
-					<div class="form-group" style="margin:0px 0px;">
+					<div class="form-group" style="margin:5px 0px;">
 						<label for="edited_accepttitle" class="col-sm-2 col-xs-4"><p>接受标题</p></label>
 						<div class="col-sm-10 col-xs-8">
 							<input type="text" class="form-control" id="edited_accepttitle" placeholder="value=存好的接受标题" value="示例标题">
 						</div>
 					</div>
-					<div class="form-group" style="margin:0px 0px;">
+					<div class="form-group" style="margin:5px 0px;">
 						<label for="edited_accepter" class="col-sm-2 col-xs-4"><p>发布者</p></label>
 						<div class="col-sm-10 col-xs-8">
 							<input type="text" class="form-control" id="edited_accepter" placeholder="value=存好的接受者">
 						</div>
 					</div>
 				</div>
-				<div class="row-fluid">
+				<div class="row">
 					<div class="col-md-2 col-sm-12">
 						<div class="row">
 							<div class="col-sm-12 col-xs-4">
@@ -161,6 +183,18 @@
 					<div class="col-md-10 col-sm-12">
 						<!--<p>详情示例0<br>详情示例1</p>-->
 						<textarea class="form-control" rows="3" id="edited_acceptdetail" placeholder="在这里输入详细描述"><p>详情示例0<br>详情示例1</p></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group" style="margin:5px 0px;">
+						<div class="col-xs-3">
+						</div>
+						<div class="col-xs-3">
+							<center><button type="submit" class="btn btn-success">确认修改</button></center>
+						</div>
+						<div class="col-xs-3">
+							<center><button type="reset" class="btn btn-warning">重置</button></center>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -168,26 +202,31 @@
 			<!--接受任务栏 VIP-->
 			<form class="form-horizontal" role="form" method="POST" action="#">
 			<div class="row taskacceptinformation VIP">
-				<div class="row-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3>接受者概览</h3>
+					</div>
+				</div>
+				<div class="row">
 					<!--非编辑模式时，将同div下注释内容与未注释内容反转-->
 					<!--<div class="col-md-2 col-sm-3 col-xs-12"><p>接受标题</p></div>
 					<div class="col-md-6 col-sm-9 col-xs-12"><p>示例标题</p></div>
 					<div class="col-md-2 col-sm-3 col-xs-6"><p>接受者</p></div>
 					<div class="col-md-2 col-sm-9 col-xs-6"><p>示例接受者</p></div>-->
-					<div class="form-group" style="margin:0px 0px;">
+					<div class="form-group" style="margin:5px 0px;">
 						<label for="edited_accepttitle" class="col-sm-2 col-xs-4"><p>接受标题</p></label>
 						<div class="col-sm-10 col-xs-8">
 							<input type="text" class="form-control" id="edited_accepttitle" placeholder="value=存好的接受标题" value="示例标题">
 						</div>
 					</div>
-					<div class="form-group" style="margin:0px 0px;">
+					<div class="form-group" style="margin:5px 0px;">
 						<label for="edited_accepter" class="col-sm-2 col-xs-4"><p>接受者</p></label>
 						<div class="col-sm-10 col-xs-8">
 							<input type="text" class="form-control" id="edited_accepter" placeholder="value=存好的接受者">
 						</div>
 					</div>
 				</div>
-				<div class="row-fluid">
+				<div class="row">
 					<div class="col-md-2 col-sm-12">
 						<div class="row">
 							<div class="col-sm-12 col-xs-4">
@@ -206,12 +245,61 @@
 						<textarea class="form-control" rows="3" id="edited_acceptdetail" placeholder="在这里输入详细描述"><p>详情示例0<br>详情示例1</p></textarea>
 					</div>
 				</div>
+				<div class="row">
+					<div class="form-group" style="margin:5px 0px;">
+						<div class="col-xs-3">
+						</div>
+						<div class="col-xs-3">
+							<center><button type="submit" class="btn btn-success">确认修改</button></center>
+						</div>
+						<div class="col-xs-3">
+							<center><button type="reset" class="btn btn-warning">重置</button></center>
+						</div>
+					</div>
+				</div>
 			</div>
 			</form>
-		<div class="row-fluid">
-		<div class="span12">
+			<!--新任务-->
+			<div class="row tasknewaccept">
+			<form class="form-horizontal" role="form" method="POST" action="#">
+				<div class="row">
+					<div class="col-xs-12">
+						<h3>新的接受任务</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group" style="margin:5px 0px;">
+						<label for="accpet_title" class="col-sm-2 col-xs-4"><p>接受标题</p></label>
+						<div class="col-sm-10 col-xs-8">
+							<input type="text" class="form-control" id="accept_title" placeholder="value=存好的接受标题" value="示例标题">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2 col-sm-12">
+						<p>详情</p>
+					</div>
+					<div class="col-md-10 col-sm-12">
+						<textarea class="form-control" rows="3" id="accept_detail" placeholder="在这里输入详细描述"></textarea>
+					</div>
+				</div>
+					<div class="row">
+					<div class="form-group" style="margin:5px 0px;">
+						<div class="col-xs-3">
+						</div>
+						<div class="col-xs-3">
+							<center><button type="submit" class="btn btn-success">确认创建</button></center>
+						</div>
+						<div class="col-xs-3">
+							<center><button type="reset" class="btn btn-warning">重置</button></center>
+						</div>
+					</div>
+					</div>
+				
+					
+			</form>
+			
 		</div>
-			</div>
 		</div>
 		<div class="col-lg-2">
 		</div>
